@@ -1,7 +1,8 @@
 <b><div align='center' ><font size='5'>下载</font></div></b>
 
 [NodeJS下载地址](https://nodejs.org/)
-![[Web.PNG]]![[Web编程/NodeJS/DL.PNG]]
+![[Web.PNG]]
+![[Web编程/WebTechniqueForLearners/NodeJS/DL.PNG]]
 不选PackageManager原因是Chocolatey在国内速度太慢了，不适合萌新
 不选Prebuilt Binaries因为我们需要自动添加Path麻烦
 不选Src Code是因为。。。。CMAKE。。。

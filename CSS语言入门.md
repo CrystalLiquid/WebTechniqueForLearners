@@ -166,26 +166,27 @@ e1 > e2{
 ###### outline-color
 ###### border-color
 
-| 属性                                                                                                                |
-| ----------------------------------------------------------------------------------------------------------------- |
-| [background-color](https://www.w3school.com.cn/cssref/pr_background-color.asp "CSS background-color 属性")          |
-| [border-bottom-color](https://www.w3school.com.cn/cssref/pr_border-bottom-color.asp "CSS border-bottom-color 属性") |
-| [border-color](https://www.w3school.com.cn/cssref/pr_border-color.asp "CSS border-color 属性")                      |
-| [border-left-color](https://www.w3school.com.cn/cssref/pr_border-left-color.asp "CSS border-left-color 属性")       |
-| [border-right-color](https://www.w3school.com.cn/cssref/pr_border-right-color.asp "CSS border-right-color 属性")    |
-| [border-top-color](https://www.w3school.com.cn/cssref/pr_border-top-color.asp "CSS border-top-color 属性")          |
-| [box-shadow](https://www.w3school.com.cn/cssref/pr_box-shadow.asp "CSS box-shadow 属性")                            |
-| [color](https://www.w3school.com.cn/cssref/pr_text_color.asp "CSS color 属性")                                      |
-| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")       |
-| [opacity](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性")                                     |
-| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                     |
-| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                   |
-| [text-shadow](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")                         |
-| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                      |
+| 属性                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------- |
+| [`background-color`](https://www.w3school.com.cn/cssref/pr_background-color.asp "CSS background-color 属性")          |
+| [`border-bottom-color`](https://www.w3school.com.cn/cssref/pr_border-bottom-color.asp "CSS border-bottom-color 属性") |
+| [`border-color`](https://www.w3school.com.cn/cssref/pr_border-color.asp "CSS border-color 属性")                      |
+| [`border-left-color`](https://www.w3school.com.cn/cssref/pr_border-left-color.asp "CSS border-left-color 属性")       |
+| [`border-right-color`](https://www.w3school.com.cn/cssref/pr_border-right-color.asp "CSS border-right-color 属性")    |
+| [`border-top-color`](https://www.w3school.com.cn/cssref/pr_border-top-color.asp "CSS border-top-color 属性")          |
+| [`box-shadow`](https://www.w3school.com.cn/cssref/pr_box-shadow.asp "CSS box-shadow 属性")                            |
+| [`color`](https://www.w3school.com.cn/cssref/pr_text_color.asp "CSS color 属性")                                      |
+| [`column-rule-color`](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")       |
+| [`opacity`](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性")                                     |
+| [`outline`](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                     |
+| [`outline-color`](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                   |
+| [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")                         |
+| [`visibility`](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                      |
 
 ---
 
 #### 布局
+
 
 
 

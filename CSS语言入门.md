@@ -248,6 +248,7 @@ e1 > e2{
 | [grid-template-rows](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")                         |                                                                                  |
 | [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                                         |                                                                                  |
 | [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                                               |                                                                                  |
+| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                                            |                                                                                  |
 | [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")                                |                                                                                  |
 | [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                                          |                                                                                  |
 | **居中边缘**                                                                                                                               |                                                                                  |
@@ -291,10 +292,9 @@ e1 > e2{
 | [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")                               |                                                                                  |
 | [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")                                 |                                                                                  |
 | [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                                           |                                                                                  |
-| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                                            |                                                                                  |
 | [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")                                      |                                                                                  |
 | **层次优先级**                                                                                                                              |                                                                                  |
-| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                                      |                                                                                  |
+| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                                      | 越大越在前面                                                                           |
 
 #### 函数初步扩展
 ##### 常用函数

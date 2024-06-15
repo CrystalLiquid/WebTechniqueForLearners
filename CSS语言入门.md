@@ -23,12 +23,12 @@ CSS是一种界面设计语言
 #### 文件嵌入
 
 #### src方式：
-###### `<style type="text/css" src="@/..."></style>`
+`<style type="text/css" src="@/..."></style>`
 **src方式引入一般是局部作用域或者全局作用域
 您可以在head处引入来使得整个html都能使用样式
 或者变为`<style type="text/css" scoped src="@/..."></style>`变为局部作用域**
 #### @import方式：
-###### `<style type="text/css">@import"./..."</style>`
+`<style type="text/css">@import"./..."</style>`
 **@import只能是全局作用域，scope标签无法影响**
  
 [更多嵌入方式详细见W3School](https://www.w3school.com.cn/css/css_shiyong.asp)
@@ -150,13 +150,7 @@ e1 > e2{
 | [`:valid`](https://www.w3school.com.cn/cssref/selector_valid.asp "CSS :valid 选择器")                                        | input:valid           | 选择带有有效值的所有 input 元素。                  |
 | [`:visited`](https://www.w3school.com.cn/cssref/selector_visited.asp "CSS :visited 选择器")                                  | a:visited             | 选择所有已访问的链接。                           |
 
-- [CSS 浏览器支持](https://www.w3school.com.cn/cssref/css_browsersupport.asp "CSS 浏览器支持参考手册")
-- [CSS 函数](https://www.w3school.com.cn/cssref/css_functions.asp "CSS 函数参考手册")
-
-
-
 --- 
-
 
 ### Attribute属性分类
 

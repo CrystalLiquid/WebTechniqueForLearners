@@ -195,4 +195,31 @@ e1 > e2{
 
 
 
-#### 文本特有
+#### 函数初步扩展
+##### 常用函数
+###### rgb()
+RGB三色不多说
+###### hsl()
+###### calc()
+通过JavaScript计算后返回实时调整
+或者用某个视口等等的长宽来得到对应元素值
+
+| 函数                                                                                                                                          | 描述                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [`attr()`](https://www.w3school.com.cn/cssref/func_attr.asp "CSS attr() 函数")                                                                | 返回所选元素的属性值。                    |
+| [`calc()`](https://www.w3school.com.cn/cssref/func_calc.asp "CSS calc() 函数")                                                                | 允许您执行计算来确定 CSS 属性值。            |
+| [`conic-gradient()`](https://www.w3school.com.cn/cssref/func_conic-gradient.asp "CSS conic-gradient() 函数")                                  | 创建圆锥渐变。                        |
+| [`counter()`](https://www.w3school.com.cn/cssref/func_counter.asp "CSS counter() 函数")                                                       | 返回指定计数器的当前值。                   |
+| [`cubic-bezier()`](https://www.w3school.com.cn/cssref/func_cubic-bezier.asp "CSS cubic-bezier() 函数")                                        | 定义三次贝塞尔曲线。                     |
+| [`hsl()`](https://www.w3school.com.cn/cssref/func_hsl.asp "CSS hsl() 函数")                                                                   | 使用色相-饱和度-亮度模型（HSL）定义颜色。        |
+| [`hsla()`](https://www.w3school.com.cn/cssref/func_hsla.asp "CSS hsla() 函数")                                                                | 使用色相-饱和度-亮度-阿尔法模型（HSLA）定义颜色。   |
+| [`linear-gradient()`](https://www.w3school.com.cn/cssref/func_linear-gradient.asp "CSS linear-gradient() 函数")                               | 将线性渐变设置为背景图像。定义至少两种颜色（从上到下）。   |
+| [`max()`](https://www.w3school.com.cn/cssref/func_max.asp "CSS max() 函数")                                                                   | 使用以逗号分隔的值列表中的最大值作为属性值。         |
+| [`min()`](https://www.w3school.com.cn/cssref/func_min.asp "CSS min() 函数")                                                                   | 使用以逗号分隔的值列表中的最小值作为属性值。         |
+| [`radial-gradient()`](https://www.w3school.com.cn/cssref/func_radial-gradient.asp "CSS radial-gradient() 函数")                               | 将径向渐变设置为背景图像。定义至少两种颜色（从中心到边缘）。 |
+| [`repeating-conic-gradient()`](https://www.w3school.com.cn/cssref/func_repeating-conic-gradient.asp "CSS repeating-conic-gradient() 函数")    | 重复圆锥渐变。                        |
+| [`repeating-linear-gradient()`](https://www.w3school.com.cn/cssref/func_repeating-linear-gradient.asp "CSS repeating-linear-gradient() 函数") | 重复线性渐变。                        |
+| [`repeating-radial-gradient()`](https://www.w3school.com.cn/cssref/func_repeating-radial-gradient.asp "CSS repeating-radial-gradient() 函数") | 重复径向渐变。                        |
+| [`rgb()`](https://www.w3school.com.cn/cssref/func_rgb.asp "CSS rgb() 函数")                                                                   | 使用红-绿-蓝模型（RGB）定义颜色。            |
+| [`rgba()`](https://www.w3school.com.cn/cssref/func_rgba.asp "CSS rgba() 函数")                                                                | 使用红-绿-蓝-阿尔法模型（RGB）定义颜色。        |
+| [`var()`](https://www.w3school.com.cn/cssref/func_var.asp "CSS var() 函数")                                                                   | 插入自定义属性的值。                     |

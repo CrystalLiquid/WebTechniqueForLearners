@@ -295,10 +295,6 @@ e1 > e2{
 | [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")                                      |
 | **层次优先级**                                                                                                                              |
 | [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                                      |
-#### 定位
-
-
-
 
 #### 函数初步扩展
 ##### 常用函数

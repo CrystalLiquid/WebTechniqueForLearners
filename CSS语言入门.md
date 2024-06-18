@@ -243,7 +243,7 @@ e1 > e2{
 | [`opacity`](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性") |     |
 
 ---
-##### flex属性介绍
+##### Flex属性介绍
 ###### 表格介绍
 
 | **flex属性**                                                                                  | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box |

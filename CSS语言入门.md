@@ -190,76 +190,80 @@ e1 > e2{
 
 非常推荐[CodingStartup起码课](https://space.bilibili.com/451368848)的视频，因为他会分开讲的特别清楚，但是内容又是同时呈现，使得思绪不容易断开（  power of timelined logus（bushi  ）
 
-| 所有属性                                                                                                                                     | **解释**                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| **背景元素属性**                                                                                                                               |                            |
-| [`background`](https://www.w3school.com.cn/cssref/pr_background.asp "CSS background 属性")                                                 |                            |
-| [`background-position`](https://www.w3school.com.cn/cssref/pr_background-position.asp "CSS background-position 属性")                      |                            |
-| [`background-size`](https://www.w3school.com.cn/cssref/pr_background-size.asp "CSS background-size 属性")                                  |                            |
-| [border-top-right-radius](https://www.w3school.com.cn/cssref/pr_border-top-right-radius.asp "CSS border-top-right-radius 属性")            |                            |
-| [border-top-width](https://www.w3school.com.cn/cssref/pr_border-top-width.asp "CSS border-top-width 属性")                                 |                            |
-| [bottom](https://www.w3school.com.cn/cssref/pr_pos_bottom.asp "CSS bottom 属性")                                                           |                            |
-| [box-shadow](https://www.w3school.com.cn/cssref/pr_box-shadow.asp "CSS box-shadow 属性")                                                   |                            |
-| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp "CSS clip 属性")                                                                 |                            |
-| [column-count](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                                             |                            |
-| [column-gap](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                                                   |                            |
-| [column-rule](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                                                |                            |
-| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")                              |                            |
-| [column-rule-width](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性")                              |                            |
-| [column-width](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                                             |                            |
-| [columns](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                                                            |                            |
-| [filter](https://www.w3school.com.cn/cssref/pr_filter.asp "CSS filter 属性")                                                               |                            |
-| [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                                           |                            |
-| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                                                 |                            |
-| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                                              |                            |
-| [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")                                  |                            |
-| [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                                            |                            |
-| **最大值定型属性**                                                                                                                              |                            |
-| [max-height](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性")                                               |                            |
-| [max-width](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")                                                  |                            |
-| [min-height](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性")                                               |                            |
-| [min-width](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")                                                  |                            |
-| **透明度**                                                                                                                                  |                            |
-| [opacity](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性")                                                            |                            |
-| **order属性**                                                                                                                              |                            |
-| [order](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性")                                                                  |                            |
-| **描边线属性**                                                                                                                                |                            |
-| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                                            |                            |
-| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                                          |                            |
-| [outline-offset](https://www.w3school.com.cn/cssref/pr_outline-offset.asp "CSS outline-offset 属性")                                       |                            |
-| [outline-width](https://www.w3school.com.cn/cssref/pr_outline-width.asp "CSS outline-width 属性")                                          |                            |
-| **perspective属性**                                                                                                                        |                            |
-| [perspective](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                                                |                            |
-| [perspective-origin](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性")                           |                            |
-| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性")                                                              |                            |
-| **文字属性**                                                                                                                                 |                            |
-| [text-indent](https://www.w3school.com.cn/cssref/pr_text_text-indent.asp "CSS text-indent 属性")                                           |                            |
-| [text-shadow](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")                                                |                            |
-| **transform**                                                                                                                            |                            |
-| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp "CSS top 属性")                                                                    |                            |
-| [transform](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")                                                      |                            |
-| [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")                                 |                            |
-| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")                                   |                            |
-| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                                             |                            |
-| [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")                                        |                            |
-| **层次优先级**                                                                                                                                |                            |
-| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                                        | 越大越在前面                     |
+| 所有属性                                                                                                                | **解释** |
+| ------------------------------------------------------------------------------------------------------------------- | ------ |
+| **背景元素属性**                                                                                                          |        |
+| [`background`](https://www.w3school.com.cn/cssref/pr_background.asp "CSS background 属性")                            |        |
+| [`background-position`](https://www.w3school.com.cn/cssref/pr_background-position.asp "CSS background-position 属性") |        |
+| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp "CSS clip 属性")                                            |        |
+| [column-count](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                        |        |
+| [column-gap](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                              |        |
+| [column-rule](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                           |        |
+| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")         |        |
+| [column-rule-width](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性")         |        |
+| [column-width](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                        |        |
+| [columns](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                                       |        |
+| [filter](https://www.w3school.com.cn/cssref/pr_filter.asp "CSS filter 属性")                                          |        |
+| [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                      |        |
+| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                            |        |
+| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                         |        |
+| [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")             |        |
+| [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                       |        |
+| **最大值定型属性**                                                                                                         |        |
+| [max-height](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性")                          |        |
+| [max-width](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")                             |        |
+| [min-height](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性")                          |        |
+| [min-width](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")                             |        |
+| **order属性**                                                                                                         |        |
+| [order](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性")                                             |        |
+| **描边线属性**                                                                                                           |        |
+| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                       |        |
+| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                     |        |
+| [outline-offset](https://www.w3school.com.cn/cssref/pr_outline-offset.asp "CSS outline-offset 属性")                  |        |
+| [outline-width](https://www.w3school.com.cn/cssref/pr_outline-width.asp "CSS outline-width 属性")                     |        |
+| **perspective属性**                                                                                                   |        |
+| [perspective](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                           |        |
+| [perspective-origin](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性")      |        |
+| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性")                                         |        |
+| **transform**                                                                                                       |        |
+| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp "CSS top 属性")                                               |        |
+| [transform](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")                                 |        |
+| [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")            |        |
+| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")              |        |
+| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                        |        |
+| [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")                   |        |
+| **层次优先级**                                                                                                           |        |
+| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                   | 越大越在前面 |
 
 ---
+##### 透明度（常用设置）
 
-| **flex属性**                                                                                                                               | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box                                                |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [`flex`](https://www.w3school.com.cn/cssref/pr_flex.asp "CSS flex 属性")                                                                   |                                                                                                             |
-| `flex-direction`                                                                                                                         | 指定main-axis，当row column的一个被设置的时候，另一个就变成cross-axis                                                           |
-| [`flex-basis`](https://www.w3school.com.cn/cssref/pr_flex-basis.asp "CSS flex-basis 属性")                                                 |                                                                                                             |
-| [`flex-grow`](https://www.w3school.com.cn/cssref/pr_flex-grow.asp "CSS flex-grow 属性")                                                    |                                                                                                             |
-| [`flex-shrink`](https://www.w3school.com.cn/cssref/pr_flex-shrink.asp "CSS flex-shrink 属性")                                              |                                                                                                             |
+| **透明度**                                                                         |     |
+| ------------------------------------------------------------------------------- | --- |
+| [`opacity`](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性") |     |
+
+---
+##### flex属性介绍
+###### 表格介绍
+
+| **flex属性**                                                                                  | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [`flex`](https://www.w3school.com.cn/cssref/pr_flex.asp "CSS flex 属性")                      |                                                              |
+| `flex-direction`                                                                            | 指定main-axis，当row、column的一个被设置的时候，另一个就变成cross-axis。           |
+| [`flex-basis`](https://www.w3school.com.cn/cssref/pr_flex-basis.asp "CSS flex-basis 属性")    |                                                              |
+| [`flex-grow`](https://www.w3school.com.cn/cssref/pr_flex-grow.asp "CSS flex-grow 属性")       |                                                              |
+| [`flex-shrink`](https://www.w3school.com.cn/cssref/pr_flex-shrink.asp "CSS flex-shrink 属性") |                                                              |
+###### 相关属性
+| `justify-content` | 相关：center、flex-start、flex-end、flex-*-reverse。此选项设定的是flex-direction/main-axis的方向上进行对齐，比如说row行，那么就行居中 |
+| ----------------- | --------------------------------------------------------------------------------------------------- |
+| `align-items`     | **同上，但是设定的是cross-direction的方向，也就是flex-direction没选择的方向进行对齐，比如设置row行，那么它将会在高度方向上进行对齐**                |
 
 ---
 ##### Padding属性详解
-常见问题：
+###### 常见问题：
 1. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
 [Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+###### 表格介绍定义
 
 | **padding属性**                                                                                                                            |                                                                                                             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -278,21 +282,29 @@ e1 > e2{
 
 ---
 ##### 字体属性介绍
+###### 一般文字设置
 
-| **字体设置属性**                                                                                                                               |                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [`font`](https://www.w3school.com.cn/cssref/pr_font_font.asp "CSS font 属性")                                                              |                                                                                                             |
-| [`font-size`](https://www.w3school.com.cn/cssref/pr_font_font-size.asp "CSS font-size 属性")                                               |                                                                                                             |
-| [`font-size-adjust`](https://www.w3school.com.cn/cssref/pr_font-size-adjust.asp "CSS font-size-adjust 属性")                               |                                                                                                             |
-| [`font-stretch`](https://www.w3school.com.cn/cssref/pr_font-stretch.asp "CSS font-stretch 属性")                                           |                                                                                                             |
-| [`font-weight`](https://www.w3school.com.cn/cssref/pr_font-weight.asp "CSS font-weight 属性")                                              |                                                                                                             |
+| **字体设置属性**                                                                                                 |                     |
+| ---------------------------------------------------------------------------------------------------------- | ------------------- |
+| [`font`](https://www.w3school.com.cn/cssref/pr_font_font.asp "CSS font 属性")                                | 文字总体属性。大小，颜色等等都可以设置 |
+| [`font-size`](https://www.w3school.com.cn/cssref/pr_font_font-size.asp "CSS font-size 属性")                 | 文字大小                |
+| [`font-size-adjust`](https://www.w3school.com.cn/cssref/pr_font-size-adjust.asp "CSS font-size-adjust 属性") |                     |
+| [`font-stretch`](https://www.w3school.com.cn/cssref/pr_font-stretch.asp "CSS font-stretch 属性")             |                     |
+| [`font-weight`](https://www.w3school.com.cn/cssref/pr_font-weight.asp "CSS font-weight 属性")                |                     |
+###### 额外文字效果
+
+| **文字属性**                                                                                         |      |
+| ------------------------------------------------------------------------------------------------ | ---- |
+| [`text-indent`](https://www.w3school.com.cn/cssref/pr_text_text-indent.asp "CSS text-indent 属性") |      |
+| [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")      | 文字阴影 |
 
 ---
 ##### Margin详解
-常见问题：
+###### 常见问题：
 1. 边距重叠：本元素：margin_top ，父元素：margin_buttom，注意，无论有没有直接定义，只要定义重叠，比如两个都设置margin：？px，那也会重叠
 2. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
 [Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+###### 相关介绍定义
 
 | **居中边缘**                                                                                          |                                                                                                             |
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -334,6 +346,7 @@ e1 > e2{
 | [`border-bottom-left-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp "CSS border-bottom-left-radius 属性")    | 设置边框线圆角，左下                 |
 | [`border-bottom-right-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-right-radius.asp "CSS border-bottom-right-radius 属性") | 设置边框线圆角，右下                 |
 | [`border-top-left-radius`](https://www.w3school.com.cn/cssref/pr_border-top-left-radius.asp "CSS border-top-left-radius 属性")             | 设置边框线圆角，左上                 |
+| [`border-top-right-radius`](https://www.w3school.com.cn/cssref/pr_border-top-right-radius.asp "CSS border-top-right-radius 属性")          |                            |
 | ...（*-radius）                                                                                                                            | 设置边框线圆角...                 |
 |                                                                                                                                          |                            |
 | [`border-top`](https://www.w3school.com.cn/cssref/pr_border-top.asp "CSS border-top 属性")                                                 |                            |
@@ -341,11 +354,17 @@ e1 > e2{
 | [`border-left`](https://www.w3school.com.cn/cssref/pr_border-left.asp "CSS border-left 属性")                                              |                            |
 | [`border-right`](https://www.w3school.com.cn/cssref/pr_border-right.asp "CSS border-right 属性")                                           |                            |
 |                                                                                                                                          |                            |
+| [`border-top-width`](https://www.w3school.com.cn/cssref/pr_border-top-width.asp "CSS border-top-width 属性")                               |                            |
 | [`border-left-width`](https://www.w3school.com.cn/cssref/pr_border-left-width.asp "CSS border-left-width 属性")                            |                            |
 | [`border-right-width`](https://www.w3school.com.cn/cssref/pr_border-right-width.asp "CSS border-right-width 属性")                         |                            |
 | [`border-spacing`](https://www.w3school.com.cn/cssref/pr_border-spacing.asp "CSS border-spacing 属性")                                     |                            |
 | [`border-bottom-width`](https://www.w3school.com.cn/cssref/pr_border-bottom-width.asp "CSS border-bottom-width 属性")                      |                            |
 
+
+---
+
+| [`box-shadow`](https://www.w3school.com.cn/cssref/pr_box-shadow.asp "CSS box-shadow 属性") | 设置盒子边缘的阴影，值通常用多个长度加rgb等等组成，推荐复制网站的来学习[CSSShadow](https://getcssscan.com/css-box-shadow-examples?ref=producthunt) |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 #### 函数初步扩展
 ##### 常用函数
 ###### rgb()

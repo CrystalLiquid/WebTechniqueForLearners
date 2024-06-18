@@ -246,17 +246,24 @@ e1 > e2{
 ##### Flex属性介绍（常用设置）
 ###### 表格介绍
 
-| **flex属性**                                                                                  | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [`flex`](https://www.w3school.com.cn/cssref/pr_flex.asp "CSS flex 属性")                      |                                                              |
-| `flex-direction`                                                                            | 指定main-axis，当row、column的一个被设置的时候，另一个就变成cross-axis。           |
-| [`flex-basis`](https://www.w3school.com.cn/cssref/pr_flex-basis.asp "CSS flex-basis 属性")    |                                                              |
-| [`flex-grow`](https://www.w3school.com.cn/cssref/pr_flex-grow.asp "CSS flex-grow 属性")       |                                                              |
-| [`flex-shrink`](https://www.w3school.com.cn/cssref/pr_flex-shrink.asp "CSS flex-shrink 属性") |                                                              |
+| **flex属性**                                                                                  | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box，并且除非特别提到，否则都是写在父层flex container的属性里                                                                                                                                               |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`flex`](https://www.w3school.com.cn/cssref/pr_flex.asp "CSS flex 属性")                      |                                                                                                                                                                                                                                                |
+| `flex-direction`                                                                            | 指定main-axis，当**row、column**的一个被设置的时候，另一个就变成cross-axis。                                                                                                                                                                                         |
+| [`flex-basis`](https://www.w3school.com.cn/cssref/pr_flex-basis.asp "CSS flex-basis 属性")    | 覆写当前容器main-axis的长度，对应属性会失效比如width height                       不设置overflow hidden的时候，如果main-axis为row设置为0与width设置为0效果相同，宽度取决于子元素宽度                                                                                    设置auto则由main-axis对应长度属性设置 |
+| [`flex-grow`](https://www.w3school.com.cn/cssref/pr_flex-grow.asp "CSS flex-grow 属性")       | **可以写在子元素总体属性里面**，如class="xx A" class="xx B" .xx {...(这里)}，用于设置子元素占有剩下长度的等分后的几份（main-axis）                                               **也可以写在子元素属性里面**，不过这时候如果没设置其他子元素的话，其他子元素就自动设置0了                                                       |
+| [`flex-shrink`](https://www.w3school.com.cn/cssref/pr_flex-shrink.asp "CSS flex-shrink 属性") | **设定如何缩小，可以写在子元素总体属性里面，也可以把份数写在子元素属性里面**，当总体属性里此属性设置为0，无论如何都不会收缩，剩下子元素会超出，只有当子元素再分别设置覆盖才不再超出                                                                                                                                                   |
+
 ###### 相关属性
 | `justify-content` | 相关：center、flex-start、flex-end、flex-*-reverse。此选项设定的是flex-direction/main-axis的方向上进行对齐，比如说row行，那么就行居中 |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
 | `align-items`     | **同上，但是设定的是cross-direction的方向，也就是flex-direction没选择的方向进行对齐，比如设置row行，那么它将会在高度方向上进行对齐**                |
+| `align-self`      | **写在子元素属性里面，用于个别==子元素==覆写`align-items`设定**                                                          |
+注意：设置row的时候start左end右，reverse则相反
+
+| `order` | 写在子元素属性里面，用于设置flex container子元素的排序，纯数字 |
+| ------- | -------------------------------------- |
+
 
 ---
 ##### Padding属性详解

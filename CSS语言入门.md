@@ -243,7 +243,7 @@ e1 > e2{
 | [`opacity`](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性") |     |
 
 ---
-##### Flex属性介绍
+##### Flex属性介绍（常用设置）
 ###### 表格介绍
 
 | **flex属性**                                                                                  | flex只有父层一个flex container，被display属性定义为flex后，其子对象才会成为flex box |
@@ -281,7 +281,7 @@ e1 > e2{
 | [`object-position`](https://www.w3school.com.cn/cssref/pr_object-position.asp "CSS object-position 属性") | 只控制可替换元素，参数可以用百分比，数字单位，特定边left buttom right top                                  |
 
 ---
-##### 字体属性介绍
+##### 字体属性介绍（常用设置）
 ###### 一般文字设置
 
 | **字体设置属性**                                                                                                 |                     |
@@ -299,7 +299,7 @@ e1 > e2{
 | [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")      | 文字阴影 |
 
 ---
-##### Margin详解
+##### Margin详解（常用设置）
 ###### 常见问题：
 1. 边距重叠：本元素：margin_top ，父元素：margin_buttom，注意，无论有没有直接定义，只要定义重叠，比如两个都设置margin：？px，那也会重叠
 2. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
@@ -316,6 +316,7 @@ e1 > e2{
 
 
 ---
+##### Grid属性介绍
 
 | **grid属性**                                                                                                                |     |
 | ------------------------------------------------------------------------------------------------------------------------- | --- |
@@ -339,6 +340,7 @@ e1 > e2{
 | [`grid-template-rows`](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")          |     |
 
 ---
+##### Border属性介绍（radius常用）
 
 | [`border`](https://www.w3school.com.cn/cssref/pr_border.asp "CSS border 属性")                                                             | 设置边框线，可以以`n单位 线类型 颜色`的格式设置 |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |

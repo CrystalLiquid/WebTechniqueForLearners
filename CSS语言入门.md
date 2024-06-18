@@ -193,6 +193,7 @@ e1 > e2{
 1. 边距重叠：本元素：margin_top ，父元素：margin_buttom，注意，无论有没有直接定义，只要定义重叠，比如两个都设置margin：？px，那也会重叠
 2. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
 [Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+非常推荐[CodingStartup起码课](https://space.bilibili.com/451368848)的视频，因为他会分开讲的特别清楚，但是内容又是同时呈现，使得思绪不容易断开
 
 
 | 所有属性                                                                                                                                     | **解释**                                                                                                      |
@@ -203,7 +204,7 @@ e1 > e2{
 | [`background-size`](https://www.w3school.com.cn/cssref/pr_background-size.asp "CSS background-size 属性")                                  |                                                                                                             |
 | [`border`](https://www.w3school.com.cn/cssref/pr_border.asp "CSS border 属性")                                                             | 设置边框线，可以以`n单位 线类型 颜色`的格式设置                                                                                  |
 | [`border-bottom`](https://www.w3school.com.cn/cssref/pr_border-bottom.asp "CSS border-bottom 属性")                                        |                                                                                                             |
-| [`border-bottom-left-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp "CSS border-bottom-left-radius 属性")    |                                                                                                             |
+| [`border-bottom-left-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp "CSS border-bottom-left-radius 属性")    | 设置边框线圆角，                                                                                                    |
 | [`border-bottom-right-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-right-radius.asp "CSS border-bottom-right-radius 属性") |                                                                                                             |
 | [`border-bottom-width`](https://www.w3school.com.cn/cssref/pr_border-bottom-width.asp "CSS border-bottom-width 属性")                      |                                                                                                             |
 | [`border-left`](https://www.w3school.com.cn/cssref/pr_border-left.asp "CSS border-left 属性")                                              |                                                                                                             |

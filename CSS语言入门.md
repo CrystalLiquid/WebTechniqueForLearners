@@ -187,8 +187,34 @@ e1 > e2{
 ---
 
 #### 布局
-
 非常推荐[CodingStartup起码课](https://space.bilibili.com/451368848)的视频，因为他会分开讲的特别清楚，但是内容又是同时呈现，使得思绪不容易断开（  power of timelined logus（bushi  ）
+
+#### Box属性
+##### Border属性介绍（radius常用）
+
+| [`border`](https://www.w3school.com.cn/cssref/pr_border.asp "CSS border 属性")                                                             | 设置边框线，可以以`n单位 线类型 颜色`的格式设置 |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+|                                                                                                                                          |                            |
+| [`border-bottom-left-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp "CSS border-bottom-left-radius 属性")    | 设置边框线圆角，左下                 |
+| [`border-bottom-right-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-right-radius.asp "CSS border-bottom-right-radius 属性") | 设置边框线圆角，右下                 |
+| [`border-top-left-radius`](https://www.w3school.com.cn/cssref/pr_border-top-left-radius.asp "CSS border-top-left-radius 属性")             | 设置边框线圆角，左上                 |
+| [`border-top-right-radius`](https://www.w3school.com.cn/cssref/pr_border-top-right-radius.asp "CSS border-top-right-radius 属性")          |                            |
+| ...（*-radius）                                                                                                                            | 设置边框线圆角...                 |
+|                                                                                                                                          |                            |
+| [`border-top`](https://www.w3school.com.cn/cssref/pr_border-top.asp "CSS border-top 属性")                                                 |                            |
+| [`border-bottom`](https://www.w3school.com.cn/cssref/pr_border-bottom.asp "CSS border-bottom 属性")                                        |                            |
+| [`border-left`](https://www.w3school.com.cn/cssref/pr_border-left.asp "CSS border-left 属性")                                              |                            |
+| [`border-right`](https://www.w3school.com.cn/cssref/pr_border-right.asp "CSS border-right 属性")                                           |                            |
+|                                                                                                                                          |                            |
+| [`border-top-width`](https://www.w3school.com.cn/cssref/pr_border-top-width.asp "CSS border-top-width 属性")                               |                            |
+| [`border-left-width`](https://www.w3school.com.cn/cssref/pr_border-left-width.asp "CSS border-left-width 属性")                            |                            |
+| [`border-right-width`](https://www.w3school.com.cn/cssref/pr_border-right-width.asp "CSS border-right-width 属性")                         |                            |
+| [`border-spacing`](https://www.w3school.com.cn/cssref/pr_border-spacing.asp "CSS border-spacing 属性")                                     |                            |
+| [`border-bottom-width`](https://www.w3school.com.cn/cssref/pr_border-bottom-width.asp "CSS border-bottom-width 属性")                      |                            |
+
+
+---
+
 
 | 所有属性                                                                                                                | **解释** |
 | ------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -236,14 +262,102 @@ e1 > e2{
 | [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                   | 越大越在前面 |
 
 ---
+
+---
+
+##### Margin详解（常用设置）(Box设置)
+###### 常见问题：
+1. 边距重叠：本元素：margin_top ，父元素：margin_buttom，注意，无论有没有直接定义，只要定义重叠，比如两个都设置margin：？px，那也会重叠
+2. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
+[Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+###### 相关介绍定义
+
+| **居中边缘**                                                                                          |                                                                                                             |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [`margin`](https://www.w3school.com.cn/cssref/pr_margin.asp "CSS margin 属性")                      | 泛属性，多个数值可以用空格隔开数值。当单个数值的时候，内容的上下左右都按此数值填充增加**框线与上一层框线的空间**/**框线外空间**。两个数值则分别设置上下，左右。**如果是可互动元素，增加的空间不会被检测** |
+| [`margin-bottom`](https://www.w3school.com.cn/cssref/pr_margin-bottom.asp "CSS margin-bottom 属性") |                                                                                                             |
+| [`margin-left`](https://www.w3school.com.cn/cssref/pr_margin-left.asp "CSS margin-left 属性")       |                                                                                                             |
+| [`margin-right`](https://www.w3school.com.cn/cssref/pr_margin-right.asp "CSS margin-right 属性")    |                                                                                                             |
+| [`margin-top`](https://www.w3school.com.cn/cssref/pr_margin-top.asp "CSS margin-top 属性")          |                                                                                                             |
+
+
+---
+##### Padding属性详解(Box设置)
+###### 常见问题：
+1. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
+[Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+###### 表格介绍定义
+
+| **padding属性**                                                                                                                            |                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [`padding`](https://www.w3school.com.cn/cssref/pr_padding.asp "CSS padding 属性")                                                          | 泛属性，多个数值可以用空格隔开数值。当单个数值的时候，内容的上下左右都按此数值填充增加**内部空间**/**框线内部空间**。两个数值则分别设置上下，左右。**如果是可互动元素，增加的空间也会被检测**       |
+| [`padding-bottom`](https://www.w3school.com.cn/cssref/pr_padding-bottom.asp "CSS padding-bottom 属性")                                     |                                                                                                             |
+| [`padding-left`](https://www.w3school.com.cn/cssref/pr_padding-left.asp "CSS padding-left 属性")                                           |                                                                                                             |
+| [`padding-right`](https://www.w3school.com.cn/cssref/pr_padding-right.asp "CSS padding-right 属性")                                        |                                                                                                             |
+| [`padding-top`](https://www.w3school.com.cn/cssref/pr_padding-top.asp "CSS padding-top 属性")                                              |                                                                                                             |
+
+---
+##### Object属性介绍
+
+| **object元素位置**                                                                                          | **可替换元素**（**replaced element**）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。 |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [`object-position`](https://www.w3school.com.cn/cssref/pr_object-position.asp "CSS object-position 属性") | 只控制可替换元素，参数可以用百分比，数字单位，特定边left buttom right top                                  |
+
+---
+#### 杂项属性设置
+##### 字体属性介绍（常用设置）
+###### 一般文字设置
+
+| **字体设置属性**                                                                                                 |                     |
+| ---------------------------------------------------------------------------------------------------------- | ------------------- |
+| [`font`](https://www.w3school.com.cn/cssref/pr_font_font.asp "CSS font 属性")                                | 文字总体属性。大小，颜色等等都可以设置 |
+| [`font-size`](https://www.w3school.com.cn/cssref/pr_font_font-size.asp "CSS font-size 属性")                 | 文字大小                |
+| [`font-size-adjust`](https://www.w3school.com.cn/cssref/pr_font-size-adjust.asp "CSS font-size-adjust 属性") |                     |
+| [`font-stretch`](https://www.w3school.com.cn/cssref/pr_font-stretch.asp "CSS font-stretch 属性")             |                     |
+| [`font-weight`](https://www.w3school.com.cn/cssref/pr_font-weight.asp "CSS font-weight 属性")                |                     |
+###### 额外文字效果
+
+| **文字属性**                                                                                         |      |
+| ------------------------------------------------------------------------------------------------ | ---- |
+| [`text-indent`](https://www.w3school.com.cn/cssref/pr_text_text-indent.asp "CSS text-indent 属性") |      |
+| [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")      | 文字阴影 |
+
+---
 ##### 透明度（常用设置）
 
 | **透明度**                                                                         |     |
 | ------------------------------------------------------------------------------- | --- |
 | [`opacity`](https://www.w3school.com.cn/cssref/pr_opacity.asp "CSS opacity 属性") |     |
 
+
 ---
-##### Flex属性介绍（常用设置）
+##### Grid属性介绍(CSS排版方式)
+[Grid一定要去看这期视频，比这里看效果好](https://www.bilibili.com/video/BV1XE41177oN/?spm_id_from=333.999.0.0&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+
+| **grid属性**                                                                                                                | 用来设定矩形框格 |
+| ------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [`grid`](https://www.w3school.com.cn/cssref/pr_grid.asp "CSS grid 属性")                                                    |          |
+| [`grid-area`](https://www.w3school.com.cn/cssref/pr_grid-area.asp "CSS grid-area 属性")                                     |          |
+| [`grid-auto-columns`](https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp "CSS grid-auto-columns 属性")             |          |
+| [`grid-auto-flow`](https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp "CSS grid-auto-flow 属性")                      |          |
+| [`grid-auto-rows`](https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp "CSS grid-auto-rows 属性")                      |          |
+| [`grid-column`](https://www.w3school.com.cn/cssref/pr_grid-column.asp "CSS grid-column 属性")                               |          |
+| [`grid-column-end`](https://www.w3school.com.cn/cssref/pr_grid-column-end.asp "CSS grid-column-end 属性")                   |          |
+| [`grid-column-gap`](https://www.w3school.com.cn/cssref/pr_grid-column-gap.asp "CSS grid-column-gap 属性")                   |          |
+| [`grid-column-start`](https://www.w3school.com.cn/cssref/pr_grid-column-start.asp "CSS grid-column-start 属性")             |          |
+| [`grid-gap`](https://www.w3school.com.cn/cssref/pr_grid-gap.asp "CSS grid-gap 属性")                                        |          |
+| [`grid-row`](https://www.w3school.com.cn/cssref/pr_grid-row.asp "CSS grid-row 属性")                                        |          |
+| [`grid-row-end`](https://www.w3school.com.cn/cssref/pr_grid-row-end.asp "CSS grid-row-end 属性")                            |          |
+| [`grid-row-gap`](https://www.w3school.com.cn/cssref/pr_grid-row-gap.asp "CSS grid-row-gap 属性")                            |          |
+| [`grid-row-start`](https://www.w3school.com.cn/cssref/pr_grid-row-start.asp "CSS grid-row-start 属性")                      |          |
+| [`grid-template`](https://www.w3school.com.cn/cssref/pr_grid-template.asp "CSS grid-template 属性")                         |          |
+| [`grid-template-areas`](https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp "CSS grid-template-areas 属性")       |          |
+| [`grid-template-columns`](https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp "CSS grid-template-columns 属性") |          |
+| [`grid-template-rows`](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")          |          |
+
+---
+
+##### Flex属性介绍（常用设置）(CSS排版方式)
 ###### [（重要）Flex相关教程](https://www.bilibili.com/video/BV1qJ411N7TA/?spm_id_from=333.999.0.0&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
 ###### 表格介绍
 
@@ -272,110 +386,6 @@ e1 > e2{
 |                   | **space-evenly：每个子元素之间都有相同长度间隔隔开**                  |
 |                   | **space-between：每个子元素之间都有相同间隔隔开，不同的在于它会取消最左和最右的空间** |
 
-
----
-##### Padding属性详解
-###### 常见问题：
-1. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
-[Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
-###### 表格介绍定义
-
-| **padding属性**                                                                                                                            |                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [`padding`](https://www.w3school.com.cn/cssref/pr_padding.asp "CSS padding 属性")                                                          | 泛属性，多个数值可以用空格隔开数值。当单个数值的时候，内容的上下左右都按此数值填充增加**内部空间**/**框线内部空间**。两个数值则分别设置上下，左右。**如果是可互动元素，增加的空间也会被检测**       |
-| [`padding-bottom`](https://www.w3school.com.cn/cssref/pr_padding-bottom.asp "CSS padding-bottom 属性")                                     |                                                                                                             |
-| [`padding-left`](https://www.w3school.com.cn/cssref/pr_padding-left.asp "CSS padding-left 属性")                                           |                                                                                                             |
-| [`padding-right`](https://www.w3school.com.cn/cssref/pr_padding-right.asp "CSS padding-right 属性")                                        |                                                                                                             |
-| [`padding-top`](https://www.w3school.com.cn/cssref/pr_padding-top.asp "CSS padding-top 属性")                                              |                                                                                                             |
-
----
-##### Object属性介绍
-
-| **object元素位置**                                                                                          | **可替换元素**（**replaced element**）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。 |
-| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [`object-position`](https://www.w3school.com.cn/cssref/pr_object-position.asp "CSS object-position 属性") | 只控制可替换元素，参数可以用百分比，数字单位，特定边left buttom right top                                  |
-
----
-##### 字体属性介绍（常用设置）
-###### 一般文字设置
-
-| **字体设置属性**                                                                                                 |                     |
-| ---------------------------------------------------------------------------------------------------------- | ------------------- |
-| [`font`](https://www.w3school.com.cn/cssref/pr_font_font.asp "CSS font 属性")                                | 文字总体属性。大小，颜色等等都可以设置 |
-| [`font-size`](https://www.w3school.com.cn/cssref/pr_font_font-size.asp "CSS font-size 属性")                 | 文字大小                |
-| [`font-size-adjust`](https://www.w3school.com.cn/cssref/pr_font-size-adjust.asp "CSS font-size-adjust 属性") |                     |
-| [`font-stretch`](https://www.w3school.com.cn/cssref/pr_font-stretch.asp "CSS font-stretch 属性")             |                     |
-| [`font-weight`](https://www.w3school.com.cn/cssref/pr_font-weight.asp "CSS font-weight 属性")                |                     |
-###### 额外文字效果
-
-| **文字属性**                                                                                         |      |
-| ------------------------------------------------------------------------------------------------ | ---- |
-| [`text-indent`](https://www.w3school.com.cn/cssref/pr_text_text-indent.asp "CSS text-indent 属性") |      |
-| [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")      | 文字阴影 |
-
----
-##### Margin详解（常用设置）
-###### 常见问题：
-1. 边距重叠：本元素：margin_top ，父元素：margin_buttom，注意，无论有没有直接定义，只要定义重叠，比如两个都设置margin：？px，那也会重叠
-2. box-sizing属性设置border-box会覆盖padding属性，使得其突出部分被削除，即使加上border边框也不会影响
-[Padding，Margin，Border专门教程](https://www.bilibili.com/video/BV1WA411h7Y1/?spm_id_from=333.337.search-card.all.click&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
-###### 相关介绍定义
-
-| **居中边缘**                                                                                          |                                                                                                             |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [`margin`](https://www.w3school.com.cn/cssref/pr_margin.asp "CSS margin 属性")                      | 泛属性，多个数值可以用空格隔开数值。当单个数值的时候，内容的上下左右都按此数值填充增加**框线与上一层框线的空间**/**框线外空间**。两个数值则分别设置上下，左右。**如果是可互动元素，增加的空间不会被检测** |
-| [`margin-bottom`](https://www.w3school.com.cn/cssref/pr_margin-bottom.asp "CSS margin-bottom 属性") |                                                                                                             |
-| [`margin-left`](https://www.w3school.com.cn/cssref/pr_margin-left.asp "CSS margin-left 属性")       |                                                                                                             |
-| [`margin-right`](https://www.w3school.com.cn/cssref/pr_margin-right.asp "CSS margin-right 属性")    |                                                                                                             |
-| [`margin-top`](https://www.w3school.com.cn/cssref/pr_margin-top.asp "CSS margin-top 属性")          |                                                                                                             |
-
-
----
-##### Grid属性介绍
-
-| **grid属性**                                                                                                                |     |
-| ------------------------------------------------------------------------------------------------------------------------- | --- |
-| [`grid`](https://www.w3school.com.cn/cssref/pr_grid.asp "CSS grid 属性")                                                    |     |
-| [`grid-area`](https://www.w3school.com.cn/cssref/pr_grid-area.asp "CSS grid-area 属性")                                     |     |
-| [`grid-auto-columns`](https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp "CSS grid-auto-columns 属性")             |     |
-| [`grid-auto-flow`](https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp "CSS grid-auto-flow 属性")                      |     |
-| [`grid-auto-rows`](https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp "CSS grid-auto-rows 属性")                      |     |
-| [`grid-column`](https://www.w3school.com.cn/cssref/pr_grid-column.asp "CSS grid-column 属性")                               |     |
-| [`grid-column-end`](https://www.w3school.com.cn/cssref/pr_grid-column-end.asp "CSS grid-column-end 属性")                   |     |
-| [`grid-column-gap`](https://www.w3school.com.cn/cssref/pr_grid-column-gap.asp "CSS grid-column-gap 属性")                   |     |
-| [`grid-column-start`](https://www.w3school.com.cn/cssref/pr_grid-column-start.asp "CSS grid-column-start 属性")             |     |
-| [`grid-gap`](https://www.w3school.com.cn/cssref/pr_grid-gap.asp "CSS grid-gap 属性")                                        |     |
-| [`grid-row`](https://www.w3school.com.cn/cssref/pr_grid-row.asp "CSS grid-row 属性")                                        |     |
-| [`grid-row-end`](https://www.w3school.com.cn/cssref/pr_grid-row-end.asp "CSS grid-row-end 属性")                            |     |
-| [`grid-row-gap`](https://www.w3school.com.cn/cssref/pr_grid-row-gap.asp "CSS grid-row-gap 属性")                            |     |
-| [`grid-row-start`](https://www.w3school.com.cn/cssref/pr_grid-row-start.asp "CSS grid-row-start 属性")                      |     |
-| [`grid-template`](https://www.w3school.com.cn/cssref/pr_grid-template.asp "CSS grid-template 属性")                         |     |
-| [`grid-template-areas`](https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp "CSS grid-template-areas 属性")       |     |
-| [`grid-template-columns`](https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp "CSS grid-template-columns 属性") |     |
-| [`grid-template-rows`](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")          |     |
-
----
-##### Border属性介绍（radius常用）
-
-| [`border`](https://www.w3school.com.cn/cssref/pr_border.asp "CSS border 属性")                                                             | 设置边框线，可以以`n单位 线类型 颜色`的格式设置 |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-|                                                                                                                                          |                            |
-| [`border-bottom-left-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-left-radius.asp "CSS border-bottom-left-radius 属性")    | 设置边框线圆角，左下                 |
-| [`border-bottom-right-radius`](https://www.w3school.com.cn/cssref/pr_border-bottom-right-radius.asp "CSS border-bottom-right-radius 属性") | 设置边框线圆角，右下                 |
-| [`border-top-left-radius`](https://www.w3school.com.cn/cssref/pr_border-top-left-radius.asp "CSS border-top-left-radius 属性")             | 设置边框线圆角，左上                 |
-| [`border-top-right-radius`](https://www.w3school.com.cn/cssref/pr_border-top-right-radius.asp "CSS border-top-right-radius 属性")          |                            |
-| ...（*-radius）                                                                                                                            | 设置边框线圆角...                 |
-|                                                                                                                                          |                            |
-| [`border-top`](https://www.w3school.com.cn/cssref/pr_border-top.asp "CSS border-top 属性")                                                 |                            |
-| [`border-bottom`](https://www.w3school.com.cn/cssref/pr_border-bottom.asp "CSS border-bottom 属性")                                        |                            |
-| [`border-left`](https://www.w3school.com.cn/cssref/pr_border-left.asp "CSS border-left 属性")                                              |                            |
-| [`border-right`](https://www.w3school.com.cn/cssref/pr_border-right.asp "CSS border-right 属性")                                           |                            |
-|                                                                                                                                          |                            |
-| [`border-top-width`](https://www.w3school.com.cn/cssref/pr_border-top-width.asp "CSS border-top-width 属性")                               |                            |
-| [`border-left-width`](https://www.w3school.com.cn/cssref/pr_border-left-width.asp "CSS border-left-width 属性")                            |                            |
-| [`border-right-width`](https://www.w3school.com.cn/cssref/pr_border-right-width.asp "CSS border-right-width 属性")                         |                            |
-| [`border-spacing`](https://www.w3school.com.cn/cssref/pr_border-spacing.asp "CSS border-spacing 属性")                                     |                            |
-| [`border-bottom-width`](https://www.w3school.com.cn/cssref/pr_border-bottom-width.asp "CSS border-bottom-width 属性")                      |                            |
 
 
 ---

@@ -331,29 +331,42 @@ e1 > e2{
 
 
 ---
+#### CSS排版方式
 ##### Grid属性介绍(CSS排版方式)
 [Grid一定要去看这期视频，比这里看效果好](https://www.bilibili.com/video/BV1XE41177oN/?spm_id_from=333.999.0.0&vd_source=b0e43c2699f8a8121ebf635fdc2de169)
+###### 基本父属性
 
-| **grid属性**                                                                                                                | 用来定义矩形框格               | 需要display设定为grid        |
-| ------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------- |
-| [`grid`](https://www.w3school.com.cn/cssref/pr_grid.asp "CSS grid 属性")                                                    |                        |                         |
-| [`grid-template`](https://www.w3school.com.cn/cssref/pr_grid-template.asp "CSS grid-template 属性")                         |                        |                         |
-| [`grid-template-rows`](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")          | 定义行主要通过此属性             | 定义多少个值就有多少个             |
-| [`grid-template-columns`](https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp "CSS grid-template-columns 属性") | 定义列主要通过此属性             | 定义多少个值就有多少个             |
-| [`grid-template-areas`](https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp "CSS grid-template-areas 属性")       | 其实就是上面的一个总体属性（太喜欢css辣） | 设置`"a b"`可以设定row column |
-| [`grid-area`](https://www.w3school.com.cn/cssref/pr_grid-area.asp "CSS grid-area 属性")                                     |                        |                         |
-| [`grid-auto-columns`](https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp "CSS grid-auto-columns 属性")             |                        |                         |
-| [`grid-auto-flow`](https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp "CSS grid-auto-flow 属性")                      |                        |                         |
-| [`grid-auto-rows`](https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp "CSS grid-auto-rows 属性")                      |                        |                         |
-| [`grid-column`](https://www.w3school.com.cn/cssref/pr_grid-column.asp "CSS grid-column 属性")                               |                        |                         |
-| [`grid-column-end`](https://www.w3school.com.cn/cssref/pr_grid-column-end.asp "CSS grid-column-end 属性")                   |                        |                         |
-| [`grid-column-gap`](https://www.w3school.com.cn/cssref/pr_grid-column-gap.asp "CSS grid-column-gap 属性")                   |                        |                         |
-| [`grid-column-start`](https://www.w3school.com.cn/cssref/pr_grid-column-start.asp "CSS grid-column-start 属性")             |                        |                         |
-| [`grid-gap`](https://www.w3school.com.cn/cssref/pr_grid-gap.asp "CSS grid-gap 属性")                                        |                        |                         |
-| [`grid-row`](https://www.w3school.com.cn/cssref/pr_grid-row.asp "CSS grid-row 属性")                                        |                        |                         |
-| [`grid-row-end`](https://www.w3school.com.cn/cssref/pr_grid-row-end.asp "CSS grid-row-end 属性")                            |                        |                         |
-| [`grid-row-gap`](https://www.w3school.com.cn/cssref/pr_grid-row-gap.asp "CSS grid-row-gap 属性")                            |                        |                         |
-| [`grid-row-start`](https://www.w3school.com.cn/cssref/pr_grid-row-start.asp "CSS grid-row-start 属性")                      |                        |                         |
+| **grid属性**                                                                                                                | 用来定义矩形框格                          未定义相关子元素属性就只占一格                                                                  | 需要display设定为grid                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| [`grid`](https://www.w3school.com.cn/cssref/pr_grid.asp "CSS grid 属性")                                                    |                                                                                                                    |                                                                                                                    |
+| [`grid-template`](https://www.w3school.com.cn/cssref/pr_grid-template.asp "CSS grid-template 属性")                         |                                                                                                                    |                                                                                                                    |
+| [`grid-template-rows`](https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp "CSS grid-template-rows 属性")          | 定义行主要通过此属性                                              GridLines可以通过`[name1] n1 [name2] n2`定义快捷名，子元素就可以通过名字来定义位置了 | 定义多少个值就有多少个                                还可以设置`1fr`设置为占等分当前方向长度的一份               还可以用repeat函数设置如5等分repeat(5,1fr) |
+| [`grid-template-columns`](https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp "CSS grid-template-columns 属性") | 定义列主要通过此属性                                                                                                         | 定义多少个值就有多少个                                                                                                        |
+| [`grid-template-areas`](https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp "CSS grid-template-areas 属性")       | 其实就是上面的一个总体属性（太喜欢css辣）                                                                                             | 设置`"a b"`可以设定row column                  还可以用`"name1 name2 name3 name3"`来命名，但是我仍然不推荐                               |
+|                                                                                                                           |                                                                                                                    |                                                                                                                    |
+| [`grid-auto-columns`](https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp "CSS grid-auto-columns 属性")             |                                                                                                                    |                                                                                                                    |
+| [`grid-auto-flow`](https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp "CSS grid-auto-flow 属性")                      |                                                                                                                    |                                                                                                                    |
+| [`grid-auto-rows`](https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp "CSS grid-auto-rows 属性")                      |                                                                                                                    |                                                                                                                    |
+| [`grid-gap`](https://www.w3school.com.cn/cssref/pr_grid-gap.asp "CSS grid-gap 属性")                                        | row-gap、column-gap还可以设置每个格子的间隔                                                                                     |                                                                                                                    |
+
+###### 基本子属性
+
+![[grid.PNG]]
+
+| [`grid-column`](https://www.w3school.com.cn/cssref/pr_grid-column.asp "CSS grid-column 属性")                   | 必须与grid-row配合用否则grid-row默认为1 / 1           | 起始（格子开头的位置） / 终止（格子最后达到的位置）                                                                                                      可以用span n来从当前位置扩展n格 |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`grid-column-end`](https://www.w3school.com.cn/cssref/pr_grid-column-end.asp "CSS grid-column-end 属性")       | grid-column细分属性                            |                                                                                                                                                      |
+| [`grid-column-gap`](https://www.w3school.com.cn/cssref/pr_grid-column-gap.asp "CSS grid-column-gap 属性")       | grid-column细分属性                            |                                                                                                                                                      |
+| [`grid-column-start`](https://www.w3school.com.cn/cssref/pr_grid-column-start.asp "CSS grid-column-start 属性") | grid-column细分属性                            |                                                                                                                                                      |
+|                                                                                                               |                                            |                                                                                                                                                      |
+| [`grid-row`](https://www.w3school.com.cn/cssref/pr_grid-row.asp "CSS grid-row 属性")                            | **必须与grid-column配合用否则grid-column默认为1 / 1** | **同grid-column**                                                                                                                                     |
+| [`grid-row-end`](https://www.w3school.com.cn/cssref/pr_grid-row-end.asp "CSS grid-row-end 属性")                | grid-row细分属性                               |                                                                                                                                                      |
+| [`grid-row-gap`](https://www.w3school.com.cn/cssref/pr_grid-row-gap.asp "CSS grid-row-gap 属性")                | grid-row细分属性                               |                                                                                                                                                      |
+| [`grid-row-start`](https://www.w3school.com.cn/cssref/pr_grid-row-start.asp "CSS grid-row-start 属性")          | grid-row细分属性                               |                                                                                                                                                      |
+|                                                                                                               |                                            |                                                                                                                                                      |
+| [`grid-area`](https://www.w3school.com.cn/cssref/pr_grid-area.asp "CSS grid-area 属性")                         | 总体属性（不推荐你用因为可读性依托）                         | **grid-row第一个值 / grid-column的第一个值 / grid-row第二个值 / grid-column的第二个值**                                                                                |
+
+
 
 ---
 

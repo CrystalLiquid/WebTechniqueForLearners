@@ -1,4 +1,7 @@
 CSS是一种界面设计语言
+MDN官方网站在学习查API的时候是必须随时开着的！否则，查使用案例的时候就要大海捞针
+主要看Properties
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/
 ## 嵌入HTML
 我们可以通过两种方式调用
 #### 直接嵌入
@@ -173,6 +176,21 @@ e1 > e2{
 | [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")                               | 文字阴影   |
 | [`visibility`](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                            | 可见性    |
 | [`text-decoration-color`](https://www.w3school.com.cn/cssref/pr_text-decoration-color.asp "CSS text-decoration-color 属性") |        |
+|                                                                                                                           |        |
+关于text-decoration-color：
+```
+/* <color> values */
+text-decoration-color: currentColor;
+text-decoration-color: red;
+text-decoration-color: #00ff00;
+text-decoration-color: rgba(255, 128, 128, 0.5);
+text-decoration-color: transparent;
+
+/* Global values */
+text-decoration-color: inherit;
+text-decoration-color: initial;
+text-decoration-color: unset;
+```
 
 ---
 ##### Outline描边轮廓线属性
@@ -183,10 +201,102 @@ e1 > e2{
 
 ---
 
+##### Filter属性
+**`filter`** 属性将模糊或颜色偏移等图形效果应用于元素。滤镜通常用于调整**图像、背景和边框**的渲染
+```
+/* <filter-function> 值 */
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+
+/* URL */
+filter: url("filters.svg#filter-id");
+
+/* 多个滤镜 */
+filter: contrast(175%) brightness(3%);
+filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);
+
+/* 不使用滤镜 */
+filter: none;
+```
+
+
+---
+
 #### 布局
 非常推荐[CodingStartup起码课](https://space.bilibili.com/451368848)的视频，因为他会分开讲的特别清楚，但是内容又是同时呈现，使得思绪不容易断开（  power of timelined logus（bushi  ）
 
 #### Box属性
+##### 基本定型属性
+**数字+单位**
+
+| [`height`](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性") | 高度     |
+| -------------------------------------------------------------------------------- | ------ |
+| [`width`](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")    | **宽度** |
+
+##### 基本定位属性
+###### 基本位置属性
+
+| [`top`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/top)                 | **`top`**[样式](https://developer.mozilla.org/zh-CN/docs/Web/CSS)属性定义了定位元素的上外边距边界与其包含块上边界之间的偏移，非定位元素设置此属性无效   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `buttom`                                                                      | **`bottom`[样式](https://developer.mozilla.org/zh-CN/docs/Web/CSS)属性定义了定位元素下外边距边界与其包含块下边界之间的偏移，非定位元素设置此属性无效** |
+| [`left`](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")    | **`left`属性定义了定位元素的左外边距边界与其包含块左边界之间的偏移，非定位元素设置此属性无效。**                                                       |
+| [`right`](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性") | 同理                                                                                                          |
+###### 高级旋转位置属性
+| **transform**                                                                           |                                                                                                                                                                                                                                                                                          |
+| --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`transform`](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")   | **`transform`** 属性允许你旋转、缩放、倾斜或平移给定元素。这是通过修改 CSS [视觉格式化模型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Visual_formatting_model)的坐标空间实现的                                                                                                                                              |
+| [`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) | **`transform-origin`** CSS 属性让你更改一个元素变形的原点。                                                                                                                                                                                                                                              |
+| `transform-style`                                                                       | **`transform-style`** 设置元素的子元素是位于 3D 空间中还是平面中。如果选择平面，元素的子元素将不会有 3D 的遮挡关系。<br><br>由于这个属性不会被继承，因此必须为元素的所有非叶子子元素设置它。<br>`/* Keyword values */`<br>`transform-style: flat;`<br>`transform-style: preserve-3d;`<br>                                                                           |
+| `transform-box`                                                                         | **`transform-box`** 属性定义了与 [`transform`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)、[`transform-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) 这两个属性有关联的布局框。详细建议去看[MDN原网址](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-box) |
+```
+/* 关键字值 */
+transform: none;
+
+/* 函数值 */
+transform: matrix(1, 2, 3, 4, 5, 6);
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transform: perspective(17px);
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2, 3, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+transform: translate(12px, 50%);
+transform: translate3d(12px, 50%, 3em);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translateZ(2px);
+transform: scale(2, 0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scaleZ(0.3);
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+
+/* 多个函数值 */
+transform: translateX(10px) rotate(10deg) translateY(5px);
+transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+
+/* 全局值 */
+transform: inherit;
+transform: initial;
+transform: revert;
+transform: revert-layer;
+transform: unset;
+```
+
+---
+
 ##### Border属性介绍（radius常用）
 
 | [`border`](https://www.w3school.com.cn/cssref/pr_border.asp "CSS border 属性")                                                             | 设置边框线，可以以`n单位 线类型 颜色`的格式设置 |
@@ -227,45 +337,121 @@ e1 > e2{
 | [`outline-color`](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")    |                                            |
 | [`outline-offset`](https://www.w3school.com.cn/cssref/pr_outline-offset.asp "CSS outline-offset 属性") |                                            |
 | [`outline-width`](https://www.w3school.com.cn/cssref/pr_outline-width.asp "CSS outline-width 属性")    |                                            |
+```
+/* 样式 */
+outline: solid;
 
+/* 颜色 | 样式 */
+outline: #f66 dashed;
+
+/* 样式 | 宽度 */
+outline: inset thick;
+
+/* 颜色 | 样式 | 宽度 */
+outline: green solid 3px;
+
+/* 全局值 */
+outline: inherit;
+outline: initial;
+outline: unset;
+```
 
 ---
 
 
-| 所有属性                                                                                                           | **解释** |
-| -------------------------------------------------------------------------------------------------------------- | ------ |
-| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp "CSS clip 属性")                                       |        |
-| [column-count](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                   |        |
-| [column-gap](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                         |        |
-| [column-rule](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                      |        |
-| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")    |        |
-| [column-rule-width](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性")    |        |
-| [column-width](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                   |        |
-| [columns](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                                  |        |
-| [filter](https://www.w3school.com.cn/cssref/pr_filter.asp "CSS filter 属性")                                     |        |
-| [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                 |        |
-| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                       |        |
-| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                    |        |
-| [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")        |        |
-| [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                  |        |
-| **最大值定型属性**                                                                                                    |        |
-| [max-height](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性")                     |        |
-| [max-width](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")                        |        |
-| [min-height](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性")                     |        |
-| [min-width](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")                        |        |
-| **order属性**                                                                                                    |        |
-| [order](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性")                                        |        |
-| **perspective属性**                                                                                              |        |
-| [perspective](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                      |        |
-| [perspective-origin](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性") |        |
-| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性")                                    |        |
-| **transform**                                                                                                  |        |
-| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp "CSS top 属性")                                          |        |
-| [transform](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")                            |        |
-| [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")       |        |
-| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")         |        |
-| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                   |        |
-| [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")              |        |
+| 所有属性                                                                                                   | **解释** |     |
+| ------------------------------------------------------------------------------------------------------ | ------ | --- |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性") |        |     |
+| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")           |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+|                                                                                                        |        |     |
+
+---
+##### Order属性
+
+| [初始值](https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial_value)            | `0`                                                                                                                                                                                                                                                                                                         |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 适用元素                                                                             | Flex items, grid items, and absolutely-positioned flex and grid container children                                                                                                                                                                                                                          |
+| [是否是继承属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Inheritance)          | 否                                                                                                                                                                                                                                                                                                           |
+| [计算值](https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value)           | as specified                                                                                                                                                                                                                                                                                                |
+| [动画类型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties) | an [integer](https://developer.mozilla.org/en-US/docs/Web/CSS/integer#interpolation "Values of the <integer> CSS data type are interpolated via integer discrete steps. The calculation is done as if they were real, floating-point numbers and the discrete value is obtained using the floor function.") |
+
+| **order属性**                                                               |                                                                                                     |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [`order`](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性") | **`order`** 属性规定了弹性容器中的可伸缩项目在布局时的顺序。元素按照 `order` 属性的值的增序进行布局。拥有相同 `order` 属性值的元素按照它们在源代码中出现的顺序进行布局。 |
+[MDN页面解释](https://developer.mozilla.org/zh-CN/docs/Web/CSS/order)
+
+---
+
+##### Perspective三维元素透视属性
+| **perspective属性**                                                                                                |                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`perspective`](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                      | **`perspective`** 指定了观察者与 z=0 平面的距离，使具有三维位置变换的元素产生透视效果。z>0 的三维元素比正常大，而 z<0 时则比正常小，大小程度由该属性的值决定。                             |
+| [`perspective-origin`](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性") | **`perspective-origin`** 指定了观察者的位置，用作 [`perspective`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/perspective) 属性的消失点。 |
+```
+/* Keyword value 不透视*/
+perspective: none;
+
+/* <length> values 透视*/
+perspective: 20px;
+perspective: 3.5em;
+```
+---
+##### 最大最小值定型
+
+| **最大最小值定型属性**                                                                                |     |
+| -------------------------------------------------------------------------------------------- | --- |
+| [`max-height`](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性") |     |
+| [`max-width`](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")    |     |
+| [`min-height`](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性") |     |
+| [`min-width`](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")    |     |
+
+---
+##### Columns属性
+**主要用于规定文字的布局格式**
+
+| [`columns`](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                               |                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`column-count`](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                | [MDN参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/column-count)需要 与`column-width`配合使用                                                                                                                                                                                                                      |
+| [`column-width`](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                |                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                               |                                                                                                                                                                                                                                                                                                                   |
+| [`column-gap`](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                      | 设置元素列之间的间隔（[gutter](https://developer.mozilla.org/zh-CN/docs/Glossary/Gutters)）大小                                                  <br>`/* Keyword value */`<br>`column-gap: normal;`<br>`/* <length> values */`<br>`column-gap: 3px;`<br>`column-gap: 2.5em;`<br>`/* <percentage> value */`<br>`column-gap: 3%;` |
+|                                                                                                               |                                                                                                                                                                                                                                                                                                                   |
+| [`column-rule`](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                   | `column-rule` [简写属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Shorthand_properties)可以在多列布局中设定分割线的宽度、样式和颜色<br>`column-rule: dotted;`<br>`column-rule: solid 8px;`<br>`column-rule: solid blue;`<br>`column-rule: thick inset blue;`                                                                        |
+| [`column-rule-color`](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性") |                                                                                                                                                                                                                                                                                                                   |
+| [`column-rule-width`](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性") |                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                               |                                                                                                                                                                                                                                                                                                                   |
+| `column-fill`                                                                                                 | `/* 关键字值 */`<br>`column-fill: auto;`<br>`column-fill: balance;`<br>`column-fill: balance-all;`<br><br>`/* 全局值 参考MDN都有的*/`<br>`column-fill: inherit;`<br>`column-fill: initial;`<br>`column-fill: revert;`<br>`column-fill: revert-layer;`<br>`column-fill: unset;`                                                |
+```
+/* Column width */
+columns: 18em;
+
+/* Column count */
+columns: auto;
+columns: 2;
+
+/* Both column width and count */
+columns: 2 auto;
+columns: auto 12em;
+columns: auto auto;
+
+/* Global values */
+columns: inherit;
+columns: initial;
+columns: unset;
+```
+
 
 ---
 
@@ -280,9 +466,22 @@ e1 > e2{
 | [`background-clip`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-clip)                               |                                                                                                                                                                                                                                                                                                                                            |
 | [`background-blend-mode`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-blend-mode)                   |                                                                                                                                                                                                                                                                                                                                            |
 | [`background-image`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image)                             | 用url()函数来添加网络图像或者直接填路径来添加本地图像                                                                                                                                                                                                                                                                                                              |
+```
+/* 使用 <background-color> */
+background: green;
 
+/* 使用 <bg-image> 和 <repeat-style> */
+background: url("test.jpg") repeat-y;
 
----
+/* 使用 <box> 和 <background-color> */
+background: border-box red;
+
+/* 将背景设为一张居中放大的图片 */
+background: no-repeat center/80% url("../img/image.png");
+```
+
+--- 
+
 ##### Box显示优先级
 
 | **层次优先级**                                                                           |        |
@@ -347,6 +546,12 @@ e1 > e2{
 | ------------------------------------------------------------------------------------------------ | ---- |
 | [`text-indent`](https://www.w3school.com.cn/cssref/pr_text_text-indent.asp "CSS text-indent 属性") |      |
 | [`text-shadow`](https://www.w3school.com.cn/cssref/pr_text-shadow.asp "CSS text-shadow 属性")      | 文字阴影 |
+###### 字体间距属性
+| [`letter-spacing`](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性") | `letter-spacing` 属性用于设置文本字符的间距表现。在渲染文本时添加到字符之间的自然间距中。`letter-spacing` 的正值会导致字符分布得更远，而 `letter-spacing` 的负值会使字符更接近。[MDN描述](https://developer.mozilla.org/zh-CN/docs/Web/CSS/letter-spacing) |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+###### 单词间隔属性
+| [`word-spacing`](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性") |  **`word-spacing`** 设置标签、单词之间的空格长度 |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------- |
 
 ---
 ##### 透明度（常用设置）
@@ -362,6 +567,12 @@ e1 > e2{
 | [`box-shadow`](https://www.w3school.com.cn/cssref/pr_box-shadow.asp "CSS box-shadow 属性") | 设置盒子边缘的阴影，值通常用多个长度加rgb等等组成，推荐复制网站的来学习[CSSShadow](https://getcssscan.com/css-box-shadow-examples?ref=producthunt) |
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 
+---
+##### Line-height属性
+
+| [`line-height`](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性") | **`line-height`** [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 属性用于设置多行元素的空间量，如多行文本的间距。对于块级元素，它指定元素行盒（line boxes）的最小高度。对于非[替代](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element)的 inline 元素，它用于计算行盒（line box）的高度 |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+关联：[[inline元素]]
 
 ---
 #### CSS排版方式
@@ -426,7 +637,7 @@ e1 > e2{
 | ------- | -------------------------------------- |
 
 
-| `justify-content` | [[CSS语言入门#Padding属性详解]]相关：                          |
+| `justify-content` | [[CSS语言入门#Padding属性详解(Box设置)]]相关：                   |
 | ----------------- | --------------------------------------------------- |
 |                   | **space-around：每个子元素左右都有相同长度间隔隔开**                  |
 |                   | **space-evenly：每个子元素之间都有相同长度间隔隔开**                  |

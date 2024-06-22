@@ -14,8 +14,8 @@
 ### 基础入门
 #### 网页设计
 ##### [CSS语言入门](CSS语言入门.md)
-**额外教程：
-CSS特效推荐：[CodingStart起码课](https://space.bilibili.com/451368848/channel/collectiondetail?sid=29606&spm_id_from=333.788.0.0)
+**额外教程：**
+**CSS特效推荐：[CodingStart起码课/CSS特效系列](https://space.bilibili.com/451368848/channel/collectiondetail?sid=29606&spm_id_from=333.788.0.0)**
 
 ##### [HTML入门](HTML入门.md)
 #### 网页互动

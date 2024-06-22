@@ -216,50 +216,67 @@ e1 > e2{
 ---
 
 
-| 所有属性                                                                                                                | **解释** |
-| ------------------------------------------------------------------------------------------------------------------- | ------ |
-| **背景元素属性**                                                                                                          |        |
-| [`background`](https://www.w3school.com.cn/cssref/pr_background.asp "CSS background 属性")                            |        |
-| [`background-position`](https://www.w3school.com.cn/cssref/pr_background-position.asp "CSS background-position 属性") |        |
-| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp "CSS clip 属性")                                            |        |
-| [column-count](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                        |        |
-| [column-gap](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                              |        |
-| [column-rule](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                           |        |
-| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")         |        |
-| [column-rule-width](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性")         |        |
-| [column-width](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                        |        |
-| [columns](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                                       |        |
-| [filter](https://www.w3school.com.cn/cssref/pr_filter.asp "CSS filter 属性")                                          |        |
-| [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                      |        |
-| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                            |        |
-| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                         |        |
-| [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")             |        |
-| [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                       |        |
-| **最大值定型属性**                                                                                                         |        |
-| [max-height](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性")                          |        |
-| [max-width](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")                             |        |
-| [min-height](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性")                          |        |
-| [min-width](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")                             |        |
-| **order属性**                                                                                                         |        |
-| [order](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性")                                             |        |
-| **描边线属性**                                                                                                           |        |
-| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                       |        |
-| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                     |        |
-| [outline-offset](https://www.w3school.com.cn/cssref/pr_outline-offset.asp "CSS outline-offset 属性")                  |        |
-| [outline-width](https://www.w3school.com.cn/cssref/pr_outline-width.asp "CSS outline-width 属性")                     |        |
-| **perspective属性**                                                                                                   |        |
-| [perspective](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                           |        |
-| [perspective-origin](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性")      |        |
-| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性")                                         |        |
-| **transform**                                                                                                       |        |
-| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp "CSS top 属性")                                               |        |
-| [transform](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")                                 |        |
-| [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")            |        |
-| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")              |        |
-| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                        |        |
-| [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")                   |        |
-| **层次优先级**                                                                                                           |        |
-| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性")                                   | 越大越在前面 |
+| 所有属性                                                                                                           | **解释** |
+| -------------------------------------------------------------------------------------------------------------- | ------ |
+| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp "CSS clip 属性")                                       |        |
+| [column-count](https://www.w3school.com.cn/cssref/pr_column-count.asp "CSS column-count 属性")                   |        |
+| [column-gap](https://www.w3school.com.cn/cssref/pr_column-gap.asp "CSS column-gap 属性")                         |        |
+| [column-rule](https://www.w3school.com.cn/cssref/pr_column-rule.asp "CSS column-rule 属性")                      |        |
+| [column-rule-color](https://www.w3school.com.cn/cssref/pr_column-rule-color.asp "CSS column-rule-color 属性")    |        |
+| [column-rule-width](https://www.w3school.com.cn/cssref/pr_column-rule-width.asp "CSS column-rule-width 属性")    |        |
+| [column-width](https://www.w3school.com.cn/cssref/pr_column-width.asp "CSS column-width 属性")                   |        |
+| [columns](https://www.w3school.com.cn/cssref/pr_columns.asp "CSS columns 属性")                                  |        |
+| [filter](https://www.w3school.com.cn/cssref/pr_filter.asp "CSS filter 属性")                                     |        |
+| [height](https://www.w3school.com.cn/cssref/pr_dim_height.asp "CSS height 属性")                                 |        |
+| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp "CSS left 属性")                                       |        |
+| [width](https://www.w3school.com.cn/cssref/pr_dim_width.asp "CSS width 属性")                                    |        |
+| [letter-spacing](https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp "CSS letter-spacing 属性")        |        |
+| [line-height](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性")                  |        |
+| **最大值定型属性**                                                                                                    |        |
+| [max-height](https://www.w3school.com.cn/cssref/pr_dim_max-height.asp "CSS max-height 属性")                     |        |
+| [max-width](https://www.w3school.com.cn/cssref/pr_dim_max-width.asp "CSS max-width 属性")                        |        |
+| [min-height](https://www.w3school.com.cn/cssref/pr_dim_min-height.asp "CSS min-height 属性")                     |        |
+| [min-width](https://www.w3school.com.cn/cssref/pr_dim_min-width.asp "CSS min-width 属性")                        |        |
+| **order属性**                                                                                                    |        |
+| [order](https://www.w3school.com.cn/cssref/pr_order.asp "CSS order 属性")                                        |        |
+| **描边线属性**                                                                                                      |        |
+| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp "CSS outline 属性")                                  |        |
+| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性")                |        |
+| [outline-offset](https://www.w3school.com.cn/cssref/pr_outline-offset.asp "CSS outline-offset 属性")             |        |
+| [outline-width](https://www.w3school.com.cn/cssref/pr_outline-width.asp "CSS outline-width 属性")                |        |
+| **perspective属性**                                                                                              |        |
+| [perspective](https://www.w3school.com.cn/cssref/pr_perspective.asp "CSS perspective 属性")                      |        |
+| [perspective-origin](https://www.w3school.com.cn/cssref/pr_perspective-origin.asp "CSS perspective-origin 属性") |        |
+| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp "CSS right 属性")                                    |        |
+| **transform**                                                                                                  |        |
+| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp "CSS top 属性")                                          |        |
+| [transform](https://www.w3school.com.cn/cssref/pr_transform.asp "CSS transform 属性")                            |        |
+| [transform-origin](https://www.w3school.com.cn/cssref/pr_transform-origin.asp "CSS transform-origin 属性")       |        |
+| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp "CSS vertical-align 属性")         |        |
+| [visibility](https://www.w3school.com.cn/cssref/pr_class_visibility.asp "CSS visibility 属性")                   |        |
+| [word-spacing](https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp "CSS word-spacing 属性")              |        |
+
+---
+
+##### Box背景属性
+
+| **背景元素属性**                                                                                                          |                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`background`](https://www.w3school.com.cn/cssref/pr_background.asp "CSS background 属性")                            |                                                                                                                                                                                                                                                                                                                                            |
+| [`background-position`](https://www.w3school.com.cn/cssref/pr_background-position.asp "CSS background-position 属性") | 配合背景图片使用top/bottom    left/right    center 或者两个百分比，或者top/bottom    left/right + 百分比/绝对长度                                                                                                                      为每一个背景图片设置初始位置。这个位置是相对于由 [`background-origin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-origin) 定义的位置图层的。 |
+| `background-color`                                                                                                  | 背景颜色                                                                                                                                                                                                                                                                                                                                       |
+| [`background-attachment`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-attachment)                   |                                                                                                                                                                                                                                                                                                                                            |
+| [`background-clip`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-clip)                               |                                                                                                                                                                                                                                                                                                                                            |
+| [`background-blend-mode`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-blend-mode)                   |                                                                                                                                                                                                                                                                                                                                            |
+| [`background-image`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-image)                             | 用url()函数来添加网络图像或者直接填路径来添加本地图像                                                                                                                                                                                                                                                                                                              |
+
+
+---
+##### Box显示优先级
+
+| **层次优先级**                                                                           |        |
+| ----------------------------------------------------------------------------------- | ------ |
+| [`z-index`](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp "CSS z-index 属性") | 越大越在前面 |
 
 ---
 
@@ -436,3 +453,6 @@ RGB三色不多说
 | [`rgb()`](https://www.w3school.com.cn/cssref/func_rgb.asp "CSS rgb() 函数")                                                                   | 使用红-绿-蓝模型（RGB）定义颜色。            |
 | [`rgba()`](https://www.w3school.com.cn/cssref/func_rgba.asp "CSS rgba() 函数")                                                                | 使用红-绿-蓝-阿尔法模型（RGB）定义颜色。        |
 | [`var()`](https://www.w3school.com.cn/cssref/func_var.asp "CSS var() 函数")                                                                   | 插入自定义属性的值。                     |
+
+---
+#### 动画

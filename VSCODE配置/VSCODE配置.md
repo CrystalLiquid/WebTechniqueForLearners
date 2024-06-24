@@ -26,7 +26,7 @@
 
 <b><div align='center' ><font size='4'>通用部分</font></div></b>
 <b><center>先点击</center></b>
- ![[Web编程/WebTechniqueForLearners/VSPic/Plugin.PNG]]
+ ![[Web编程/WebTechniqueForLearners/VSCODE配置/VSPic/Plugin.PNG]]
 <b><center>进入插件搜索界面</center></b>
 ![[Chinese.PNG]]
 <b>点击蓝色小按钮下载安装即可

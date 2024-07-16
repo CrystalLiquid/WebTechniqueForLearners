@@ -6,7 +6,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/
 我们可以通过两种方式调用
 #### 直接嵌入
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>
@@ -41,7 +41,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/
 
 #### 常用选择器                     
 
-```
+```CSS
 //类型选择器、class选择器<div class="classname"></div>
 .classname {
 	attrib: ...
@@ -49,7 +49,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/
 ```
 
 
-```
+```CSS
 //id选择器 <div id="idname"></div>
 #idname {
 	attrib: ...
@@ -57,7 +57,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/
 ```
 
 
-```
+```CSS
 //特定标签类型选择器 <p class="x1"></p>  <p class="x3"></p>
 p.x3{
 	attrib: ...
@@ -67,7 +67,7 @@ p.x3{
 
 
 
-```
+```CSS
 //页面上全部元素都被选择
 * {
 	attrib： ...
@@ -75,7 +75,7 @@ p.x3{
 ```
 
 
-```
+```CSS
 //选择多个元素
 e1,e2 {
 	attrib： ...
@@ -83,7 +83,7 @@ e1,e2 {
 ```
 
 
-```
+```CSS
 //父元素类型为e1的所有e2类型子元素
 e1 > e2{
 	...

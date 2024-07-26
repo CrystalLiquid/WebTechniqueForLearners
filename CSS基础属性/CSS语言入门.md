@@ -199,6 +199,7 @@ text-decoration-color: unset;
 | ------------------------------------------------------------------------------------------------- |
 | [`outline-color`](https://www.w3school.com.cn/cssref/pr_outline-color.asp "CSS outline-color 属性") |
 
+
 ---
 
 ##### Filter属性
@@ -572,7 +573,7 @@ background: no-repeat center/80% url("../img/image.png");
 
 | [`line-height`](https://www.w3school.com.cn/cssref/pr_dim_line-height.asp "CSS line-height 属性") | **`line-height`** [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 属性用于设置多行元素的空间量，如多行文本的间距。对于块级元素，它指定元素行盒（line boxes）的最小高度。对于非[替代](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element)的 inline 元素，它用于计算行盒（line box）的高度 |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-关联：[[inline元素]]
+关联：inline元素
 
 ---
 #### CSS排版方式

@@ -17,7 +17,9 @@ function foo(arg){
 	
 }
 
+const foo2 = ()=>{
 
+}
 ```
 
 ### 条件判断和循环
@@ -38,8 +40,8 @@ if(a===b && c===d){//&& xx和xx同时成立
 if(a===b || c===d){//|| xx或xx同时成立
 
 }
-//此外js还支持switch，与C语言格式完全相同
-//for和while也与C语言完全相同
+//----------此外js还支持switch，与C语言格式完全相同--------------------
+//----------------for和while也与C语言完全相同-------------------------
 ```
 ### 字符串拼接
 使用"+"，您可以轻松拼接字符串
@@ -92,6 +94,25 @@ events: {
 let str = json_object.events.st.id; //访问对象
 let num = json_array[0].key;
 ```
+
+## 函数执行时间控制(延时，异步)
+www.bilibili.com/video/BV1cX4y1b7vc
+```javascript
+setTimeOut(()=>{
+
+},time)//延迟执行
+
+const p1 = new Promise((resolve,reject)=>{
+	reject('失败的信息');
+	resolve('任务1:成功得到的数据');
+})//promise异步
+p1.then(data=>{
+	return new Promise((resolve,reject)=>{
+		resolve('任务2：成功得到的数据')
+	})
+})
+```
+
 ## 面向对象
 ### 注意事项
 ```javascript

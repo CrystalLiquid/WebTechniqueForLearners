@@ -7,6 +7,7 @@
 <标签类型 id="" class="">
 </标签类型>
 ```
+### [[前端基础]]
 ### 元素内联与非内联类型
 #### 常见inline内联元素
 span、img、a、lable、input、abbr（缩写）、em（强调）、big、cite（引用）、i（斜体）、q（短引用）、textarea、select、small、sub、sup，strong、u（下划线）、button（默认display：inline-block）
